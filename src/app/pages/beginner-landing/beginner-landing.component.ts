@@ -3,6 +3,7 @@ import { VideoPlayerComponent } from '../../video-player/video-player.component'
 import { KeyPointComponent } from './key-point/key-point.component';
 import { StarDisplayComponent } from './star-display/star-display.component';
 import { KeyBenefitComponent } from './key-benefit/key-benefit.component';
+import { ContactFormService } from '../../services/contact-form.service';
 
 @Component({
   selector: 'app-beginner-landing',
@@ -13,8 +14,16 @@ import { KeyBenefitComponent } from './key-benefit/key-benefit.component';
 })
 export class BeginnerLandingComponent {
 
+  constructor(
+    private contactFormService: ContactFormService
+  ) { }
+
   confiance = "Ne doutez plus jamais de vos compétences, et soyez près en toutes circonstances à comprendre ce que l’on vous dit"
   liberte = "Reprenez le contrôle sur votre vie en ôtant la barrière de la langue dans toutes les situations"
   job = "Impressionez vos collègues et votre entourage en comprenant l’anglais de manière fluide et précise"
+
+  toggleForm() {
+    this.contactFormService.toggleForm();
+  }
 
 }

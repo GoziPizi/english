@@ -1,0 +1,12 @@
+<div id="form-pop-up" *ngIf="isPopupOpen">
+    <div id="form-pop-up-content" class="container">
+        <i (click)="toggleForm()" class="fa fa-times" id="close-form"></i>
+        <h2>Contactez-nous:</h2>
+        <form [formGroup]="contactForm">
+            <input type="text" formControlName="name" placeholder="Nom" required>
+            <input type="phone" formControlName="phone" placeholder="Téléphone" required>
+            <textarea formControlName="other" placeholder="Présentez-vous (optionnel)"></textarea>
+        </form>
+        <button (click)="submitForm()" class="btn btn-primary" [disabled]="!contactForm.valid">Envoyer</button>
+    </div>
+</div>
