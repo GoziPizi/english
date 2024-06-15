@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+.container {
+    padding: 5px;
+    background-color: $other-light-blue;
+}
+
+.container img {
+    width: 40%;
+    height: auto;
+}

@@ -8,3 +8,32 @@ p {
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
+
+$background-white: #ffffff;
+$primary-blue: #1E3A8A;
+$primary-red: #FA4C3C;
+
+$secondary-yellow: #F59E0B;
+$secondary-light-gray: #F7F8F8;
+
+$other-light-blue: #60A5FA;
+
+.primary-blue {
+    color: $primary-blue;
+}
+
+.primary-red {
+    color: $primary-red;
+}
+
+.secondary-yellow {
+    color: $secondary-yellow;
+}
+
+.secondary-light-gray {
+    color: $secondary-light-gray;
+}
+
+.other-light-blue {
+    color: $other-light-blue;
+}

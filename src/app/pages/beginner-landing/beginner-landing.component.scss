@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+
+#page {
+    padding: 0;
+}
+
+#first-view {
+    @media screen and (max-width: 768px){
+        height: 100vh;
+    }
+}
+
+#problem-questions {
+    @media screen and (max-width: 768px){
+        padding: 10px;
+    }
+}
