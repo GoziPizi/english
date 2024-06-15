@@ -1,0 +1,33 @@
+@import '../../../../styles.scss';
+
+:host {
+    box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    background-color: $other-light-blue;
+    margin-top: 20px;
+}
+
+h3 {
+    position: absolute;
+
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: $secondary-light-gray;
+    border-radius: 20px;
+
+    padding: 10px 20px;
+    width: max-content;
+    text-align: center;
+
+    box-shadow: 
+        5px 5px 36px 5px rgba(0, 0, 0, 0.2),
+        inset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+}
+
+p {
+    margin-top: 30px;
+}

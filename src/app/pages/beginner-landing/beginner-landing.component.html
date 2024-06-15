@@ -1,4 +1,4 @@
-<div id="page" class="container">
+<div id="page" class="container d-flex flex-column align-items-center">
     <div id="first-view" class="d-flex flex-column align-items-center">
         <h4 class="text-center" style="margin: 20px 10px 10px 0" >Débutants en anglais, bienvenue !</h4>
         <div id="headline" style="margin: 20px 0" >
@@ -15,5 +15,25 @@
             <h2 style="margin-top: 20px">∘ Vous avez essayé d'apprendre par vous même plusieurs fois sans résultats ?</h2>
         </div>
     </div>
-    <h1 class="text-center" style="font-weight: bold" >Vous avez besoin d'un accompagnement complet et structuré</h1>
+    <h1 class="text-center" style="font-weight: bold; margin: 10px" >Découvrez notre formation complète accompagnée</h1>
+    <app-video-player></app-video-player>
+    <div id="credentials" class="container d-flex flex-column align-items-center">
+        <h1 style="margin-top: 20px; font-weight: bold">Au programme:</h1>
+        <h3>Des professeurs reconnus: </h3>
+        <img src="../../../assets/nicolas.webp" style="width: 80%; border-radius: 20px" >
+        <app-star-display style="margin-top: 10px"></app-star-display>
+        <h3 style="margin-top: 20px;" >Des cours structurés:</h3>
+        <div class="container d-flex flex-column align-items-center">
+            <h4>Grammaire</h4>
+            <h4>Discussion</h4>
+            <h4>Vocabulaire</h4>
+            <h4>Prononciation</h4>
+        </div>
+    </div>
+    <div id="benefits" class="container d-flex flex-column align-items-center">
+        <h1 class="text-center" style="font-weight: bold; margin-top: 20px">Ce que la formation accompagnée vous offre:</h1>
+        <app-key-benefit [title]="'Confiance en soi'" [description]="confiance"></app-key-benefit>
+        <app-key-benefit [title]="'Devenez libre'" [description]="liberte"></app-key-benefit>
+        <app-key-benefit [title]="'Une compétence à forte valeur'" [description]="job"></app-key-benefit>
+    </div>
 </div>
