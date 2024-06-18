@@ -25,7 +25,6 @@ export class BeginnerLandingComponent {
   job = "Impressionez vos collègues et votre entourage en comprenant l’anglais de manière fluide et précise"
 
   toggleForm() {
-    this.facebookPixelService.trackEvent('ContactFormOpened', {});
     this.contactFormService.toggleForm();
   }
 
