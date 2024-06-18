@@ -35,12 +35,12 @@ export class ContactFormComponent {
   }
 
   submitForm() {
-    this.facebookPixelService.trackEvent('Lead', this.contactForm.value);
+    this.facebookPixelService.trackEvent('Lead');
     this.http.post(`${this.baseUrl}/api/contact`, this.contactForm.value).subscribe({
       next: () => {
         this.contactForm.reset();
         this.toggleForm();
-        //this.router.navigate(['/thank-you-form']);
+        this.router.navigate(['/thank-you-form']);
       }
     });
   }

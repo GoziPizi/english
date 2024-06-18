@@ -2,7 +2,7 @@
     <div id="first-view" class="d-flex flex-column align-items-center">
         <h4 class="text-center" style="margin: 20px 10px 10px 0" >Débutants en anglais, bienvenue !</h4>
         <div id="headline" style="margin: 20px 0" >
-            <h1 class="text-center" style="font-weight: bold" >45 jours pour passer de <span class="other-light-blue">débutant</span> à <span class="primary-red">compétent</span> en anglais</h1>
+            <h1 class="text-center" style="font-weight: bold" >90 jours pour passer de <span class="other-light-blue">débutant</span> à <span class="primary-red">compétent</span> en anglais</h1>
             <h2 class="text-center light" style="font-size: medium;" >Avec notre méthode complète et accompagnée</h2>
         </div>
         <div id="key-points" class="container d-flex flex-wrap justify-content-center align-items-center w-100" style="padding: 0">
@@ -18,11 +18,13 @@
     <h1 class="text-center" style="font-weight: bold; margin: 10px" >Découvrez notre formation complète accompagnée</h1>
     <p class="text-center">Une formation testée et structurée qui couvre toutes les notions pour passer de <span class="other-light-blue">débutant</span> à <span class="primary-red">compétent</span>.</p>
     <div id="credentials" class="container d-flex flex-column align-items-center">
-        <h1 style="margin-top: 20px; font-weight: bold">Au programme:</h1>
-        <h3 style="font-weight: bold" >Un professeur reconnu: </h3>
+        <h1 style="margin-top: 20px; font-weight: bold">Au programme :</h1>
+        <h3 style="font-weight: bold" >Prenez la <span class="primary-red" >parole</span> !</h3>
+        <p class="text-center" >Nous mettons l'accent sur le <b>conversationnel</b> plus que tout, pour que vous soyez à l'aise dans toutes les circonstances. Notre professeur vous mettra dans des situations de prise de parole, et de <b>discussions réalistes</b>.</p>
+        <h3 style="font-weight: bold" >Un professeur reconnu :</h3>
         <p style="margin-bottom: 0px">Nicolas Filizzola</p>
-        <p class="text-center">Ingénieur, trilingue, et professeur d'anglais</p>
-        <img src="../../../assets/nicolas.webp" style="width: 80%; border-radius: 20px" >
+        <p class="text-center">Enseignant d'anglais professionnel et trilingue</p>
+        <img src="../../../assets/dsi.jpg">
         <app-star-display style="margin-top: 10px"></app-star-display>
         <div style="margin-top: 10px" class="container d-flex flex-row justify-content-center">
             <h4 style="font-weight: bold">5/5</h4>
@@ -30,57 +32,54 @@
         </div>
         <h3 style="margin-top: 20px; font-weight: bold" >Des cours structurés:</h3>
         <div class="container d-flex flex-column align-items-center">
-            <h4><i style="margin-right: 5px" class="fa-solid fa-puzzle-piece"></i>Grammaire</h4>
-            <h4><i style="margin-right: 5px" class="fa-solid fa-comments"></i>Discussion</h4>
-            <h4><i style="margin-right: 5px" class="fa-solid fa-book"></i>Vocabulaire</h4>
-            <h4><i style="margin-right: 5px" class="fa-solid fa-volume-high"></i>Prononciation</h4>
+            <h4><i style="margin-right: 5px; margin-top: 20px" class="fa-solid fa-comments"></i>Discussion</h4>
+            <h4><i style="margin-right: 5px; margin-top: 20px" class="fa-solid fa-puzzle-piece"></i>Grammaire</h4>
+            <h4><i style="margin-right: 5px; margin-top: 20px" class="fa-solid fa-book"></i>Vocabulaire</h4>
+            <h4><i style="margin-right: 5px; margin-top: 20px" class="fa-solid fa-volume-high"></i>Prononciation</h4>
         </div>
     </div>
     <div id="benefits" class="container d-flex flex-column align-items-center">
-        <h1 class="text-center" style="font-weight: bold; margin-top: 20px">Ce que la formation accompagnée vous offre:</h1>
+        <h1 class="text-center" style="font-weight: bold; margin-top: 20px">Ce que la formation accompagnée vous offre :</h1>
         <app-key-benefit [title]="'Confiance en soi'" [description]="confiance"></app-key-benefit>
         <app-key-benefit [title]="'Liberté linguistique'" [description]="liberte"></app-key-benefit>
         <app-key-benefit [title]="'Une compétence à forte valeur'" [description]="job"></app-key-benefit>
     </div>
     <div id="social-proof" class="container d-flex flex-column align-items-center" style="margin-top: 20px" >
         <h1 style="font-weight: bold" >Nos élèves parlent de nous :</h1>
-        <p>Mettre avis</p>
-        <p>Mettre stat</p>
+        <app-testimonial style="margin-top: 10px" [image]="'../../../../assets/nour.webp'" [name]="'Nour'" [text]="'Super prof! J\'ai eu l\'occasion de travailler avec Nicolas à mainte reprise et à chaque fois je suis impressionnée par sa patience et son éloquence. Une patience qui est certainement un atout lorsqu\'il s\'agit d\'aider les étudiants à surmonter les défis de l\'apprentissage. Nicolas a également la capacité de simplifier des concepts complexes, ce qui le rend très efficace dans son enseignement. Je recommande vivement ses cours d\'anglais !'"></app-testimonial>
     </div>
     <div class="container d-flex flex-column align-items-center" id="our-offer">
         <h1 class="text-center" style="font-weight: bold; margin-top: 20px" >Notre formation <span class="primary-red">accompagnée complète</span></h1>
         <p>∘ <span style="font-weight: bold" >12 semaines</span> de cours</p>
         <p>∘ <span style="font-weight: bold">3 séances</span> de coaching personalisées</p>
         <p>∘ <span style="font-weight: bold">12 séances</span> collectives</p>
-        <p>∘ Accès aux questions / réponses <span style="font-weight: bold">7j/7</span></p>
+        <p>∘ Accès aux questions/ réponses <span style="font-weight: bold">7j/7</span></p>
         <p>∘ Modules d'auto-évaluation</p>
         <p class="text-center" >∘ Évaluation et consolidation des points faibles avec un <span style="font-weight: bold">expert</span></p>
         <h2 class="text-center">Impossible de ne pas réussir</h2>
     </div>
     <div class="line"></div>
     <div id="bonus" class="container d-flex flex-column align-items-center">
-        <h1 class="text-center" style="font-weight: bold; margin-top: 20px" >Vous obtenez gratuitement</h1>
-        <p>∘ Notre méthode pour développer votre vocabulaire (22€)</p>
-        <p>∘ Comment découvrir et apprendre des notions avancées (39€)</p>
-        <p>∘ Tous les gestes du quotidien qui débloquent votre niveau d'anglais (19€)</p>
-        <p>∘ Une séande d'évaluation offerte avec un expert (99€)</p>
-    </div>
-    <div id="price" class="container d-flex flex-row align-items-center justify-content-center">
-        <h1>699€</h1> <h1 style="margin-left: 10px" class="light">(1283€)</h1>
+        <h1 class="text-center" style="font-weight: bold; margin-top: 20px" >Vous obtenez <span class="other-light-blue" style="font-size:larger" >gratuitement</span></h1>
+        <p class="text-center">∘ Notre méthode pour développer votre vocabulaire (22€)</p>
+        <p class="text-center">∘ Comment découvrir et apprendre des notions avancées (39€)</p>
+        <p class="text-center">∘ Tous les gestes du quotidien qui débloquent votre niveau d'anglais (19€)</p>
+        <p class="text-center">∘ Une séance d'évaluation offerte avec un expert (99€)</p>
     </div>
     <div id="limited-offer" class="container d-flex flex-column align-items-center">
         <h3 class="text-center" style="font-weight: bold; margin-top: 20px">Nous n'acceptons qu'un nombre <span class="primary-red">limité</span> d'élèves</h3>
-        <p>8 élèves sur 14 dans le cursus débutant</p>
+        <p class="text-center">8 élèves sur 14 dans le cursus débutant</p>
     </div>
     <div id="warranty" class="container d-flex flex-column align-items-center">
         <h1 class="text-center" style="font-weight: bold; margin-top: 20px">Nous restons avec vous jusqu'à vos objectifs</h1>
-        <p>Séances d'approfondissement réduites pour vous aider à atteindre vos objectifs</p>
+        <p class="text-center">Séances d'approfondissement réduites pour vous aider à atteindre vos objectifs</p>
     </div>
     <div id="cta" class="container d-flex flex-column align-items-center">
-        <h1 class="text-center" style="font-weight: bold; margin-top: 20px">Laissez-nous vous contacter</h1>
+        <h1 class="text-center primary-red" style="font-weight: bold; margin-top: 20px">Laissez-nous vous contacter</h1>
         <p class="text-center">Nous utiliserons votre numéro pour vous appeler, déterminer votre niveau d'anglais, puis vous offrir votre première séance gratuite (pas de carte de paiement requise).</p>
-        <button (click)="toggleForm()" class="btn btn-primary" style="margin-top: 20px">Je donne mes coordonnées</button>
-        <p class="text-center" style="margin-top: 20px">Nous cloturerons cette page lorsque toutes les places seront prises.</p>
+        <button (click)="toggleForm()" class="btn btn-primary btn-lg" style="margin-top: 20px">Je donne mes coordonnées</button>
+        <p class="text-center"  >(Aucune carte requise)</p>
+        <p class="text-center" style="margin-top: 20px">Nous clorons cette page lorsque toutes les places seront prises.</p>
     </div>
     <div id="final-word" class="container d-flex flex-column align-items-center" style="margin-top: 20px">
         <p class="text-center">Notre méthode reservée à seulement 14 élèves vous permet de débloquer votre niveau d’anglais et d’atteindre vos objectifs de vie en retirant la barrière de la langue.</p>

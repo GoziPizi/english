@@ -1,11 +1,16 @@
 @import '../../styles.scss';
 
-.container {
+.container-fluid {
     padding: 5px;
     background-color: $other-light-blue;
 }
 
-.container img {
+.container-fluid img {
     width: 40%;
     height: auto;
+
+    //on desktop
+    @media (min-width: 768px) {
+        width: 10%;
+    }
 }

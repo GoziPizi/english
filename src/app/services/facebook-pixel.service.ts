@@ -9,7 +9,7 @@ export class FacebookPixelService {
 
   constructor() { }
 
-  trackEvent(event: string, data: any) {
-    fbq('track', event, data);
+  trackEvent(event: string) {
+    fbq('track', event);
   }
 }

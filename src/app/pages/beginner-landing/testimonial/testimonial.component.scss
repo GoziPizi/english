@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+
+:host {
+    border-radius: 20px;
+    padding: 20px;
+
+    border: 1px solid #333;
+
+    box-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
