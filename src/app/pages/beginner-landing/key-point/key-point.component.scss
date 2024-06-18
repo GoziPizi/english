@@ -2,12 +2,10 @@
 
 :host {
     box-shadow: 5px 5px 36px 5px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    background-color: $secondary-light-gray;
+    background-color: $background-white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid #AAA;
 }
 
 p {

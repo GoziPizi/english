@@ -4,6 +4,7 @@ import { KeyPointComponent } from './key-point/key-point.component';
 import { StarDisplayComponent } from './star-display/star-display.component';
 import { KeyBenefitComponent } from './key-benefit/key-benefit.component';
 import { ContactFormService } from '../../services/contact-form.service';
+import { FacebookPixelService } from '../../services/facebook-pixel.service';
 
 @Component({
   selector: 'app-beginner-landing',
@@ -15,7 +16,8 @@ import { ContactFormService } from '../../services/contact-form.service';
 export class BeginnerLandingComponent {
 
   constructor(
-    private contactFormService: ContactFormService
+    private contactFormService: ContactFormService,
+    private facebookPixelService: FacebookPixelService
   ) { }
 
   confiance = "Ne doutez plus jamais de vos compétences, et soyez près en toutes circonstances à comprendre ce que l’on vous dit"
@@ -23,6 +25,7 @@ export class BeginnerLandingComponent {
   job = "Impressionez vos collègues et votre entourage en comprenant l’anglais de manière fluide et précise"
 
   toggleForm() {
+    this.facebookPixelService.trackEvent('ContactFormOpened', {});
     this.contactFormService.toggleForm();
   }
 
