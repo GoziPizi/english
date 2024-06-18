@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Urbane Rounded';
+    src: local('Urbane Rounded DemiBold'), local('Urbane-Rounded-DemiBold'),
+        url('UrbaneRounded-DemiBold.woff2') format('woff2'),
+        url('UrbaneRounded-DemiBold.woff') format('woff'),
+        url('UrbaneRounded-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

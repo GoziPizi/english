@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-p {
-    font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'Urban Rounded Demi Bold';
+    src: url('./assets/UrbaneRounded-DemiBold/UrbaneRounded-DemiBold.ttf') format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'Urban Rounded Light';
+    src: url('./assets/UrbaneRounded-Light/UrbaneRounded-Light.ttf') format('truetype');
 }
+
+
 
 $background-white: #ffffff;
 $primary-blue: #1E3A8A;
@@ -17,6 +18,22 @@ $secondary-yellow: #F59E0B;
 $secondary-light-gray: #F7F8F8;
 
 $other-light-blue: #60A5FA;
+
+body {
+    background-color: $background-white;
+}   
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Urban Rounded Demi Bold', sans-serif;
+}
+
+.light {
+    font-family: 'Urban Rounded Light', sans-serif;
+}
 
 .primary-blue {
     color: $primary-blue;
